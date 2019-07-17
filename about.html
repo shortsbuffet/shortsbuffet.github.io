@@ -1,0 +1,492 @@
+<!doctype html>
+
+<html> <!-- COPY BOOTSTRAP-->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<!-- THESE ARE FOR THE ANIMATIONS-->
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+		<!-- ----------------------------------- START COPY PASTING FROM HERE PT.1 ------------------------------- -->
+
+<style>
+ 
+		
+		ul { 
+		
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background: none;
+			
+		}
+		
+		li { 
+			
+			float: left;
+			left: 10%; 
+			position: relative;
+			padding-top: 10px;
+		}
+		
+		li a { 
+		
+			display: block;
+			text-align: center;
+			margin-left: 50px;
+			margin-top: 25px;
+			color: #fff;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-weight: 450;
+			font-family: LemonMilklight;
+			font-size: 17px;
+			
+			}
+			img {
+		 height: auto;
+		 max-width: 100%;
+		}
+			
+		@font-face { 
+			
+			font-family: LemonMilklight;
+			src: url("LemonMilklight.otf") format("opentype");
+		
+		}	
+		
+		li a:visited { 
+  			text-decoration: none;
+		}
+		
+		li a:link{
+			text-decoration: none;
+		}
+
+		
+		li a:hover { 
+		
+			opacity: 10;
+			box-shadow: #fff;
+			background: rgba(255, 255, 255, 0.1);
+			color: rgb(67, 124, 161);
+			text-decoration: none;
+
+		}
+		
+		li a:active {
+  			text-decoration: none;
+		}
+
+		
+		nav #brand { 
+				
+			float: left;
+			display: block;
+			margin-left: 50px;
+			line-height: 70px;
+			transition: all 0.3s ease-out;
+			
+				
+		}
+		   
+		.icon-bar { 
+			
+			padding-top: 3px;
+			margin-top: 30px;
+			background-color: #1F618D !important;
+
+		}
+		
+		
+		.footer { 
+		   
+			background-color: #ADD8E6;
+			height: 80px;
+			
+		}	
+		
+		
+		/* width */
+	
+		::-webkit-scrollbar {
+ 
+			width: 12px;
+		
+		}
+
+		/* Track */
+		
+		::-webkit-scrollbar-track {
+  
+			box-shadow: inset 0 0 5px black; 
+			border-radius: 10px;
+		
+		}
+
+		/* Handle */
+
+		::-webkit-scrollbar-thumb {
+  
+			background: #85aff2; 
+			border-radius: 10px;
+
+		}
+		
+		.column {
+  
+			float: left;
+			width: 50%;
+			
+		}
+
+
+		.row:after {
+		
+			content: "";
+			display: table;
+			clear: both;
+		
+		}
+		
+		tr, td { <!-- ADD THIS SECTION -->
+  
+			padding-right: 90px;
+			padding-left: 80px;
+			padding-bottom: 10px;
+
+		
+		}
+		
+		.map { <!-- ADD THIS SECTION -->
+		
+			font-size: 12px;
+		
+		}
+		img {
+		 height: auto;
+		 max-width: 100%;
+		}
+		
+		
+				<!-- ----------------------------------- STOP COPY PASTING FROM HERE PT.1 ------------------------------- -->
+
+		.frame2 { 
+		
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: cover;
+			background-attachment: fixed;
+			margin-top: -20px;
+		
+		}
+		
+		.frame4 {
+		   
+
+			
+		}
+		
+		.midtext {
+		
+			margin-right: 20%;
+			margin-left: 20%;
+			margin-top: -6%;
+			
+			word-break: break-all;	
+		
+		}
+			
+		
+		body { 
+		
+			font-family: LemonMilklight;
+		
+		
+		}
+		
+		p { 
+		
+			margin-right: 50px;
+			margin-left: 50px;
+			font-family: LemonMilklight;
+			text-align: center;
+		
+		}
+	
+		.zoom{
+		
+		transition: transform .2s; /* Animation */
+		
+		}
+		
+		.zoom:hover {
+		
+		transform: scale(1.2);
+		
+		}
+		/*        dropdown*/
+        
+		li {
+         display: block;
+         transition-duration: 0.5s;
+        }
+
+        li:hover {
+          cursor: pointer;
+        }
+
+        ul li ul {
+          visibility: hidden;
+          opacity: 0;
+          position: absolute;
+          transition: all 0.5s ease;
+          margin-top: 1rem;
+          left: 0;
+          display: none;
+        }
+
+        ul li:hover > ul,
+        ul li ul:hover {
+          visibility: visible;
+          opacity: 1;
+          display: block;
+        }
+
+        ul li ul li {
+          clear: both;
+          width: 100%;
+        }
+		.active {
+			color: rgb(67, 124, 161);
+			text-decoration: none;
+  			
+		}
+	
+
+		
+
+</style>
+
+		<!-- ----------------------------------- START COPY PASTING FROM HERE PT.2 ------------------------------- -->
+
+
+<head>
+
+
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+<title>Shorts Buffet</title>
+
+
+	<nav class="navbar navbar-fixed-top">
+		<div class="container-fluid">
+			
+			<ul id="navbar">
+			
+			<!-- This is the hamburger menu -->
+			<button id="menu" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+			</button>
+			
+				<span id="brand"> <!-- Logo -->    
+					<a href="index.html">	
+						<img src="Logoo2.png" width="135" height="120" class="logo zoom">    <!-- REPLACE OLD SRC WITH THIS NEW SRC -->
+					</a>
+				</span>
+
+				<div class="collapse navbar-collapse" id="myNavbar"> <!-- for hamburger menu -->
+			
+					<li><a href="index.html" >Home</a></li>
+					<li><a href="about.html" class="active">About the Shop</a></li>
+					<li><a href="#">Shorts</a>
+						<ul class="dropdown">
+							<li><a href="freesizepl1.html">Plain</a></li>
+							<li><a href="freepr1.html">Printed</a></li>
+						</ul>
+					</li>
+					<li><a href="others.html">Other Brands</a></li>
+					<li><a href="contactus.html">Contact Us</a></li>
+				</div>
+			
+			</ul>
+		</div>
+	</nav>
+	
+
+		<!-- ----------------------------------- STOP COPY PASTING FROM HERE PT.2 ------------------------------- -->
+
+	
+	<div class="image"> <!-- FRAME 1 -->
+		<img src="shorts header2.jpg" class="img-responsive" style="width: 6000px;">
+	</div>
+
+</head> 
+
+<body>
+	
+
+	<div class="frame2"> <!-- FRAME 2 -->
+		<div data-aos="fade-up" data-aos-duration="1500"> 
+
+		<center><img src="about us.png" width="440" height="400" hspace="20" alt="clooth" class="img-responsive"></center>
+
+		</br>
+		</br>
+
+		<p style=" font-size:19px; color: dimgray; "> Shorts Buffet is a start-up fashion business in the Philippines that sells quality shorts through social media platforms such as Facebook. We mass produce an assortment of shorts for everyday use. From swim wear to sleep wear, our shorts are made of comfortable fabric that anyone will love. Our designs cover several fashion statements - whether you're a basics kind of gal or a pattern loving guy, we got you.</p>
+										
+		<p style="font-size:19px; color: dimgray; "> Comfort, aesthetic, and quality. These shorts are crafted from quality fabrics. Rock your OOTD with our pieces without emptying your pockets.</p>
+
+		</br>
+		</br>
+
+		</div>
+	
+	</br>
+	</br>
+	</br>
+	</br>
+
+	</div>
+
+	<div class="frame3"> <!-- FRAME 3 PUT CAROUSELL HERE--> 
+	<center><img src="borderthin.png" alt="border" class="img-responsive" style="margin-top: -80px;"></center>
+	<div data-aos="fade-up" data-aos-duration="1500"> 
+			<div class="container" >
+				
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					
+					  <!-- Wrapper for slides -->
+					  <div class="carousel-inner">
+						<div class="item active">
+								<img src="carousell1.png" class="img-responsive" style="width: 6000px;">
+						</div>
+				  
+						<div class="item">
+								<img src="carousell2.png" class="img-responsive" style="width: 6000px;">
+						</div>
+					  
+						<div class="item">
+								<img src="carousell3.png" class="img-responsive" style="width: 6000px;">
+						</div>
+					  </div>
+				  
+					  <!-- Left and right controls -->
+					  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+						<span class="sr-only">Previous</span>
+					  </a>
+					  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+						<span class="sr-only">Next</span>
+					  </a>
+					</div>
+				  </div>
+	
+	</div>
+	</div>
+
+
+	</br>
+
+		<div class="frame2"> <!-- FRAME 4 -->
+		<div data-aos="fade-up" data-aos-duration="1500"> 
+
+		</br>
+		</br>
+		
+		<center><img src="history.png" width="440" height="400" hspace="20" alt="clooth" class="img-responsive"></center>
+
+		<p style=" font-size:19px; color: dimgray; "> Shorts Buffet started in 2016. The owner, Emmerie De Guzman, came up with an idea to make use of her mother's excess fabrics. Since shorts are one of the most timeless fashion pieces, she decided to go with distinct yet versatile styles to be able to use all of the extra materials. The products became a huge hit and was continuously in demand. Thus, she started the business called Shorts Buffet.  </p>
+										
+
+		</br>
+		</br>
+
+		</div>
+		
+		</br>
+		</br>
+		</br>
+		</br>
+		</br>
+		</br>
+
+	</div>
+
+</body>
+
+<!-- ADD THIS NEW SECTION UNTIL... -->
+
+</br>
+	<center><img src="border.png" alt="border" class="img-responsive" style="margin-top: -80px;"></center>
+	</br>
+	<div class="map" style="margin-right: 85px;">
+	<center><table>
+	
+
+		<tr>
+				<td><a href="index.html" style="padding-right: 50px;">Home</a></td>
+		
+			<td><a href="freesizepl1.html">Free Size</a></td>
+		</tr>
+		
+		<tr>
+			<td><a href="others.html" style="padding-right: 50px;">Other Brands</a></td>
+			<td><a href="pluspl1.html">Plus Size</a></td>
+		</tr>
+		
+		<tr>
+				<td><a href="about.html" style="padding-right: 50px;">About the Shop</a></td>
+			<td><a href="petitepl1.html">Petite</a></td>
+		</tr>
+		
+		<tr>
+			<td><a href="contactus.html" style="padding-right: 50px;">Contact Form</a></td>
+			<td><a href="menspl1.html">Mens</a></td>
+		</tr>
+			
+	</table></center>
+	</div>
+	</br>
+
+<!-- ... HERE-->
+
+<div class="footer"> 
+	</br>		
+		<center><p style="font-family: LemonMilklight; font-size:10px; color: dimgray;" align="center"> Developed by Rocamora | De Los Reyes | Sevilla | Febre | Ang</p></blockquote></center>
+		<center><p style="font-family: LemonMilklight; font-size:10px; color: dimgray;" align="center"> IT130L - EM01</p></blockquote></center>
+
+</div>
+
+		<!-- ----------------------------------- START COPY PASTING FROM HERE PT.3 ------------------------------- -->
+
+<script> 
+	
+	$(document).on('scroll', function (e) {
+	   if ($(window).width() > 100) {
+		   var rgba = $(document).scrollTop() / 500;
+	  $('.navbar').css('background-color', 'rgba(173,216,230,' + rgba + ')');
+	   }
+   })
+	   
+	   </script>
+
+		<!-- ----------------------------------- START COPY PASTING FROM HERE PT.2 ------------------------------- -->
+	   
+<script> 
+  AOS.init();
+</script>
+	   
+</html>

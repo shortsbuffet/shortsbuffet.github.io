@@ -1,0 +1,403 @@
+<!doctype html>
+<!doctype html>
+
+<html> <!-- COPY BOOTSTRAP-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<head>
+
+
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+<title>Shorts Buffet | Other Brands</title>
+
+
+	<nav class="navbar navbar-fixed-top">
+		<div class="container-fluid">
+			
+			<ul id="navbar">
+			
+			<!-- This is the hamburger menu -->
+			<button id="menu" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+			</button>
+			
+				<span id="brand"> <!-- Logo -->
+					<a href="index.html">	
+						<img src="Logoo2.png" width="135" height="120" class="logo zoom">
+					</a>
+				</span>
+
+				<div class="collapse navbar-collapse" id="myNavbar"> <!-- for hamburger menu -->
+			
+					<li><a href="index.html" >Home</a></li>
+					<li><a href="about.html">About the Shop</a></li>
+					<li><a href="#">Shorts</a>
+						<ul class="dropdown">
+							<li><a href="freesizepl1.html">Plain</a></li>
+							<li><a href="freepr1.html">Printed</a></li>
+						</ul>
+					</li>
+					<li><a href="others.html" class="active">Other Brands</a></li>
+					<li><a href="contactus.html" >Contact Us</a></li>
+				</div>
+			
+			</ul>
+		</div>
+		
+	</nav>
+<style>
+    body{
+        background: url("oth.jpg") no-repeat center center;
+		background-repeat: no-repeat;
+		background-position: center center;
+   
+    }
+	img {
+		 height: auto;
+		 max-width: 100%;
+		}   
+     form{
+        background-color:#FFF;
+    }    
+		ul { 
+		
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background: none;
+			
+		}
+		
+		li { 
+			
+			float: left;
+			left: 10%; 
+			position: relative;
+			padding-top: 10px;
+		}
+		
+		li a { 
+		
+			display: block;
+			text-align: center;
+			margin-left: 50px;
+			margin-top: 25px;
+			color: #fff;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-weight: 450;
+			font-family: LemonMilklight;
+			font-size: 17px;
+			
+			}
+			/*        dropdown*/
+        
+		li {
+         display: block;
+         transition-duration: 0.5s;
+        }
+		.map { <!-- ADD THIS SECTION -->
+		
+		font-size: 12px;
+	
+	}
+
+        li:hover {
+          cursor: pointer;
+        }
+		a:hover{
+			color: rgb(40, 84, 206);
+		}
+
+        ul li ul {
+          visibility: hidden;
+          opacity: 0;
+          position: absolute;
+          transition: all 0.5s ease;
+          margin-top: 1rem;
+          left: 0;
+          display: none;
+        }
+
+        ul li:hover > ul,
+        ul li ul:hover {
+          visibility: visible;
+          opacity: 1;
+          display: block;
+        }
+
+        ul li ul li {
+          clear: both;
+          width: 100%;
+        }
+			
+		@font-face { 
+			
+			font-family: LemonMilklight;
+			src: url("LemonMilklight.otf") format("opentype");
+		
+		}	
+		
+    h1, body { 
+			
+			font-family: LemonMilklight;
+            align-items: center;
+    }
+		li a:visited { 
+  			text-decoration: none;
+		}
+		
+		li a:link{
+			text-decoration: none;
+		}
+
+		
+		li a:hover { 
+		
+			opacity: 10;
+			box-shadow: #fff;
+			background: rgba(255, 255, 255, 0.1);
+			color: rgb(67, 124, 161);
+			text-decoration: none;
+
+		}
+		.active {
+			color: rgb(67, 124, 161);
+			text-decoration: none;
+  			
+		}
+		
+		li a:active {
+  			text-decoration: none;
+		}
+
+		
+		nav #brand { 
+				
+			float: left;
+			display: block;
+			margin-left: 50px;
+			line-height: 70px;
+			transition: all 0.3s ease-out;
+			
+				
+		}
+		   
+		.icon-bar { 
+			
+			padding-top: 3px;
+			margin-top: 30px;
+			background-color: #1F618D !important;
+
+		}
+		
+		
+		.footer { 
+		   
+			background-color: #ADD8E6;
+			height: 200px;
+			
+		}	
+        .section
+            {
+        background-color: white;
+        height: auto;
+        width: auto;
+        margin-left: 150px;
+        margin-right: 150px;
+        border: 1.3px solid;
+        border-color: darkgoldenrod;
+        border-radius: 10px;
+        text-align: center;
+      
+		
+            }
+          
+          
+         
+          
+            .section1
+            {
+        background-color: white;
+        height: auto;
+        width: auto;
+        margin-left: 150px;
+        margin-right: 150px;
+        border: 1.3px solid;
+        border-color: rgb(46, 43, 37);
+        border-radius: 10px;
+        text-align: center;
+		
+            }
+			a{
+				color: rgb(67, 124, 161);
+               
+			}
+		
+		/* width */
+	
+		::-webkit-scrollbar {
+ 
+			width: 12px;
+		
+		}
+
+		/* Track */
+		
+		::-webkit-scrollbar-track {
+  
+			box-shadow: inset 0 0 5px black; 
+			border-radius: 10px;
+		
+		}
+
+		/* Handle */
+
+		::-webkit-scrollbar-thumb {
+  
+			background: #85aff2; 
+			border-radius: 10px;
+
+		}
+    
+    input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+input[type=email], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: rgb(96, 171, 196);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+	color: white;
+	background-color:  rgb(18, 99, 146);
+}
+
+</style>
+</head>
+       <br \>
+      <br \>
+      <br \>
+      <br \>
+      <br \>
+      <br \>
+      <center><h1> OTHER BRANDS </h1></center>
+      <br \>
+      <br \>
+	<div class="section">
+	
+		
+    <img src="emmerie.jpg" width="250" height="20">
+        
+    
+       
+        <map name="icon">
+        <area shape="rect" coords="2,1,196,193" href = "https://www.facebook.com/emmeries/">
+      
+        <br><a href="https://www.facebook.com/emmeries" style="float: center;"> <img src="icon5.png" width="50px" style="margin-bottom: 10px;" ></a>
+        
+        
+        </map>
+       
+            </div><br><br><br>
+
+            <div class="section1">
+	
+                    <br \>
+                <img src="glea.jpg" width="250" height="300">
+ 
+                    <map name="icon">
+                    <area shape="rect" coords="2,1,196,193" href = "https://www.facebook.com/emmeries/">
+                    <br><a href="https://www.facebook.com/gleabrand/" style="float: center;"> <img src="icon5.png" width="50px" style="margin-bottom: 10px;" ></a>
+               
+                    
+                    </map>
+                   
+                        </div>
+<body>
+		<br><br><br><br>
+		
+  <div class="footer"> 
+<br />
+
+<div class="map" style="margin-right: 10px;">
+		<center><table>
+		
+	
+			<tr>
+					<td><a href="index.html" style="padding-right: 50px;">Home</a></td>
+			
+				<td><a href="freesizepl1.html">Free Size</a></td>
+			</tr>
+			
+			<tr>
+				<td><a href="others.html" style="padding-right: 50px;">Other Brands</a></td>
+				<td><a href="pluspl1.html">Plus Size</a></td>
+			</tr>
+			
+			<tr>
+					<td><a href="about.html" style="padding-right: 50px;">About the Shop</a></td>
+				<td><a href="petitepl1.html">Petite</a></td>
+			</tr>
+			
+			<tr>
+				<td><a href="contactus.html" style="padding-right: 50px;">Contact Form</a></td>
+				<td><a href="menspl1.html">Mens</a></td>
+			</tr>
+				
+		</table></center>
+		</div>
+<hr>
+	<center><p style="font-family: LemonMilklight; font-size:10px; color: dimgray;" align="center"> Developed by Rocamora | De Los Reyes | Sevilla | Febre | Ang</p></center>
+	<center><p style="font-family: LemonMilklight; font-size:10px; color: dimgray;" align="center"> IT130L - EM01</p></center>
+
+</div>
+
+		<!-- ----------------------------------- START COPY PASTING FROM HERE PT.3 ------------------------------- -->
+
+<script> 
+	
+	$(document).on('scroll', function (e) {
+	   if ($(window).width() > 100) {
+		   var rgba = $(document).scrollTop() / 500;
+	  $('.navbar').css('background-color', 'rgba(173,216,230,' + rgba + ')');
+	   }
+   })
+	   
+	   </script>
+
+</body>
+</html>
